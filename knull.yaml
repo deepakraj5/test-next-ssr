@@ -1,0 +1,12 @@
+id: 1
+name: frontend
+environment:
+  - NODE_ENV: qa
+  - NODE_VERSION: 22
+stages:
+  - stage:
+      name: Install node dependecies
+      cmd: npm i
+  - stage:
+      name: Build
+      cmd: npm run build

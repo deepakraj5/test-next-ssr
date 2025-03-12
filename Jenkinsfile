@@ -6,6 +6,8 @@ pipeline {
         TRUNK_BRANCH = 'main'
     }
     
+
+    
     stages {
         stage('Validate PR Naming Conventions') {
             when {

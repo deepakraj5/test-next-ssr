@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         CURRENT_BRANCH = "${env.GIT_BRANCH.replaceFirst('origin/', '')}"
-        TRUNK_BRANCH = 'develop'
+        TRUNK_BRANCH = 'main'
     }
 
 

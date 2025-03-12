@@ -11,6 +11,7 @@ pipeline {
             when {
                 expression { env.CURRENT_BRANCH  != env.TRUNK_BRANCH }
             }
+            
             steps {
                 script {
                     def validBranch = env.CHANGE_BRANCH ==~ /^(feature|bugfix|hotfix)\/HPE-\d+(-.+)?$/

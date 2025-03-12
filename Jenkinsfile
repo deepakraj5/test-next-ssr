@@ -5,6 +5,7 @@ pipeline {
         CURRENT_BRANCH = "${env.GIT_BRANCH.replaceFirst('origin/', '')}"
         TRUNK_BRANCH = 'develop'
     }
+    
     stages {
         stage('Validate PR Naming Conventions') {
             when {
